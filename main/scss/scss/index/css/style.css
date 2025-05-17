@@ -1,0 +1,195 @@
+:root {
+    --white: #ffffff;
+    --light-gray: #EDF0F5;
+    --blue-light: #637BAD;
+    --blue: #02297F;
+    --yellow: #E3B45B;
+  }
+
+  /* Header container */
+/* Main header container */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background-color: #f9f9fb;
+  font-family: 'Proxima Nova A', sans-serif;
+  position: relative;
+}
+
+/* Logo styling */
+.logo-container img {
+  background-image: url(/main/scss/scss/index.html/img/logo.png);
+  height: 90px;
+  object-fit: contain;
+}
+
+/* Navigation links container */
+.navbar {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Individual navigation links */
+.nav-link {
+  font-size: 24px;
+  font-weight: bold;
+  color: #02297F;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Active state (highlighted background) */
+.nav-link.active {
+  background-color: #637BAD;
+  color: white;
+  border-radius: 0px; /* matches the image */
+}
+
+/* Optional hover effect */
+.nav-link:hover {
+  background-color: #E0E7F4;
+  color: #02297F;
+}
+
+
+  
+  /* Background Image */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/main/scss/scss/index.html/img/body.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.2;
+  z-index: -1;
+}
+  
+  
+  header {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header img {
+    height: 50px;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  nav a.active {
+    background-color: var(--blue-light);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .hero {
+    background: url(/main/scss/scss/index.html/img/body.webp) no-repeat center center/cover;
+    padding: 4rem 2rem;
+    color: var(--blue);
+  }
+  
+ .hero .content {
+      background-color: var(--white);
+      border: 2px solid var(--blue);
+      padding: 2rem;
+      max-width: 1169px;
+      height: 933px;
+      top: 2224px;
+      left: 136px;
+      border-radius: 40px;
+      margin: auto;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .services {
+    padding: 4rem 2rem;
+    width: 1470px;
+    height: 2207px;
+    top: 1261px;
+    left: -15px;
+    text-align: center;
+    background: url('/main/scss/scss/index.html/img/unsplash_Dl6H4_nzBpE.png') no-repeat center center/cover;
+  }
+  
+  .services h2 {
+    font-size: 32px;
+    margin-bottom: 2rem;
+    color: var(--blue);
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .service-item {
+    background-color: white;
+    border: 1px solid var(--blue-light);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer {
+    background-color: var(--blue);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  footer h3 {
+    margin-bottom: 1rem;
+  }
+  
+  footer p,
+  footer a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
